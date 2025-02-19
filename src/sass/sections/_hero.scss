@@ -1,4 +1,26 @@
 #hero {
+  .bubble {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 10%, rgba(0,174,255,0.6) 60%, rgba(0,174,255,0.8) 90%);
+  border-radius: 50%;
+  position: fixed;
+  top: 20px; /* Adjust spacing from top */
+  right: 20px; /* Adjust spacing from right */
+  box-shadow: 0 0 20px rgba(0, 174, 255, 0.5);
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
   min-height: 100vh;
   height: 100vh;
   display: flex;
