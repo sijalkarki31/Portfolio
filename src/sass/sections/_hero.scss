@@ -1,87 +1,4 @@
 #hero {
-  position: relative;
-  overflow: hidden; /* Prevent bubbles from overflowing */
-}
-
-/* General bubble styling */
-.bubble {
-  position: absolute;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(74, 98, 138, 0.4);
-  animation: float 4s infinite ease-in-out;
-  opacity: 0.9;
-}
-
-/* Main large bubble */
-.bubble.big {
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle, rgba(255,255,255,0.8) 10%, #7AB2D3 60%, #4A628A 90%);
-  top: 30px;
-  right: 30px;
-  box-shadow: 0 0 30px rgba(74, 98, 138, 0.5);
-}
-
-/* Small bubbles */
-.bubble.small {
-  background: radial-gradient(circle, rgba(255,255,255,0.8) 10%, #7AB2D3 60%, #4A628A 80%);
-  box-shadow: 0 0 15px rgba(122, 178, 211, 0.5);
-  animation: floatSmall 6s infinite ease-in-out;
-}
-
-/* Position each small bubble */
-.bubble.small-1 {
-  width: 50px;
-  height: 50px;
-  top: 100px;
-  right: 80px;
-  animation-delay: 0.5s;
-}
-
-.bubble.small-2 {
-  width: 40px;
-  height: 40px;
-  top: 200px;
-  right: 50px;
-  animation-delay: 1s;
-}
-
-.bubble.small-3 {
-  width: 60px;
-  height: 60px;
-  top: 300px;
-  right: 120px;
-  animation-delay: 1.5s;
-}
-
-.bubble.small-4 {
-  width: 45px;
-  height: 45px;
-  top: 400px;
-  right: 70px;
-  animation-delay: 2s;
-}
-
-/* Floating animation */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes floatSmall {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-
   min-height: 100vh;
   height: 100vh;
   display: flex;
@@ -148,4 +65,4 @@
       }
     }
   }
-
+}
