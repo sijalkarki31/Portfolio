@@ -1,9 +1,15 @@
 #hero {
+  position: relative;
+  overflow: hidden; /* Prevent bubbles from overflowing */
+}
+
+/* General bubble styling */
 .bubble {
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(74, 98, 138, 0.4);
   animation: float 4s infinite ease-in-out;
+  opacity: 0.9;
 }
 
 /* Main large bubble */
@@ -16,15 +22,14 @@
   box-shadow: 0 0 30px rgba(74, 98, 138, 0.5);
 }
 
-/* Small Bubbles */
+/* Small bubbles */
 .bubble.small {
   background: radial-gradient(circle, rgba(255,255,255,0.8) 10%, #7AB2D3 60%, #4A628A 80%);
   box-shadow: 0 0 15px rgba(122, 178, 211, 0.5);
-  animation: floatSmall 5s infinite ease-in-out;
-  opacity: 0.8;
+  animation: floatSmall 6s infinite ease-in-out;
 }
 
-/* Positioning each small bubble randomly */
+/* Position each small bubble */
 .bubble.small-1 {
   width: 50px;
   height: 50px;
@@ -45,8 +50,16 @@
   width: 60px;
   height: 60px;
   top: 300px;
-  right: 100px;
+  right: 120px;
   animation-delay: 1.5s;
+}
+
+.bubble.small-4 {
+  width: 45px;
+  height: 45px;
+  top: 400px;
+  right: 70px;
+  animation-delay: 2s;
 }
 
 /* Floating animation */
@@ -67,13 +80,6 @@
     transform: translateY(-10px);
   }
 }
-
-/* Ensure hero section contains the bubbles */
-#hero {
-  position: relative;
-  overflow: hidden;
-}
-
 
 
   min-height: 100vh;
